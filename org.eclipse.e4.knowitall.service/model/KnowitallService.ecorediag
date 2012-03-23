@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmi:id="_b9um8HU4EeGyaeMCXb_FtA" type="EcoreTools" name="KnowitallService" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="_d6i48HU4EeGyaeMCXb_FtA" type="1001">
+    <children xmi:type="notation:Node" xmi:id="_d6lVMHU4EeGyaeMCXb_FtA" type="4001"/>
+    <children xmi:type="notation:Node" xmi:id="_d6nKYHU4EeGyaeMCXb_FtA" type="5001">
+      <children xmi:type="notation:Node" xmi:id="_iPmNoHU4EeGyaeMCXb_FtA" type="2001">
+        <element xmi:type="ecore:EAttribute" href="KnowitallService.ecore#//IKnowItAll/question"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_iPmNoXU4EeGyaeMCXb_FtA"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_jOxLoHU4EeGyaeMCXb_FtA" type="2001">
+        <element xmi:type="ecore:EAttribute" href="KnowitallService.ecore#//IKnowItAll/answer.1"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_jOxLoXU4EeGyaeMCXb_FtA"/>
+      </children>
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_d6nKYXU4EeGyaeMCXb_FtA"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_d6nKYnU4EeGyaeMCXb_FtA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_d6nKY3U4EeGyaeMCXb_FtA"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_d6oYgHU4EeGyaeMCXb_FtA" type="5002">
+      <children xmi:type="notation:Node" xmi:id="_mOH4sHU4EeGyaeMCXb_FtA" type="2002">
+        <element xmi:type="ecore:EOperation" href="KnowitallService.ecore#//IKnowItAll/answer"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_mOH4sXU4EeGyaeMCXb_FtA"/>
+      </children>
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_d6oYgXU4EeGyaeMCXb_FtA"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_d6oYgnU4EeGyaeMCXb_FtA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_d6oYg3U4EeGyaeMCXb_FtA"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_d6i48XU4EeGyaeMCXb_FtA" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element xmi:type="ecore:EClass" href="KnowitallService.ecore#//IKnowItAll"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_d6i48nU4EeGyaeMCXb_FtA" x="120" y="100" width="219" height="131"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_b9um8XU4EeGyaeMCXb_FtA"/>
+  <element xmi:type="ecore:EPackage" href="KnowitallService.ecore#/"/>
+</notation:Diagram>
