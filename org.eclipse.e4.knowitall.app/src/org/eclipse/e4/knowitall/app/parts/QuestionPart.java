@@ -7,7 +7,7 @@ import javax.inject.Inject;
 
 import knowitallservice.IKnowItAll;
 
-import org.eclipse.e4.core.di.annotations.Optional;
+import org.eclipse.e4.core.contexts.IEclipseContext;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.SelectionEvent;
 import org.eclipse.swt.events.SelectionListener;
@@ -19,7 +19,8 @@ public class QuestionPart extends Composite implements SelectionListener {
 	private static final boolean mocking = false;
 	private Text questionText;
 	private Text answerText;
-	private final IKnowItAll knowItAll;
+//	private final IKnowItAll knowItAll;
+	private IEclipseContext context;
 
 	/**
 	 * Create the composite.
@@ -28,10 +29,10 @@ public class QuestionPart extends Composite implements SelectionListener {
 	 * @param style
 	 */
 	@Inject
-	public QuestionPart(Composite parent, @Optional IKnowItAll knowItAll) {
+	public QuestionPart(Composite parent, IEclipseContext context) {
 		super(parent, SWT.NONE);
-		this.knowItAll = knowItAll;
-
+//		this.knowItAll = knowItAll;
+		this.setContext(context);
 		questionText = new Text(this, SWT.BORDER);
 		questionText.setBounds(10, 38, 266, 21);
 
@@ -67,8 +68,20 @@ public class QuestionPart extends Composite implements SelectionListener {
 
 			answerText.append(knowItAll.answer(questionText.getText()) + "\n");
 		} else {
+			context.set("question", questionText.getText());
+			IKnowItAll knowItAll = context.get(IKnowItAll.class);
 			answerText.append(knowItAll.answer(questionText.getText()) + "\n");
+			questionText.setText("");
+			questionText.forceFocus();
 
 		}
+	}
+
+	public IEclipseContext getContext() {
+		return context;
+	}
+
+	public void setContext(IEclipseContext context) {
+		this.context = context;
 	}
 }
