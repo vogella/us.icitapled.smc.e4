@@ -2,6 +2,8 @@ package org.eclipse.e4.knowitall.service.translator;
 
 import java.lang.reflect.InvocationTargetException;
 
+import knowitallservice.IKnowItAll;
+
 import org.eclipse.emf.common.notify.Adapter;
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.util.EList;
@@ -14,27 +16,13 @@ import org.eclipse.emf.ecore.EStructuralFeature;
 import org.eclipse.emf.ecore.resource.Resource;
 
 import com.memetix.mst.language.Language;
-import com.memetix.mst.language.SpokenDialect;
-import com.memetix.mst.speak.Speak;
 import com.memetix.mst.translate.Translate;
-
-import knowitallservice.IKnowItAll;
 
 public class TranslatorKnowItAll implements IKnowItAll {
 	
 	private String question;
 	private String answer;
 
-	public TranslatorKnowItAll() {
-		try {
-			Speak.setKey("29AEA70CEE1293E98960A42A5B3AEF135987624C");
-			Speak.execute("Testing", SpokenDialect.CATALAN_SPAIN);
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-	}
-	
 	@Override
 	public EClass eClass() {
 		// TODO Auto-generated method stub
