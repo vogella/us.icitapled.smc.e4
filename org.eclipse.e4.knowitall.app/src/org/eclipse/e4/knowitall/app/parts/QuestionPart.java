@@ -1,21 +1,22 @@
 package org.eclipse.e4.knowitall.app.parts;
 
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
+
 import javax.inject.Inject;
 
 import knowitallservice.IKnowItAll;
 
 import org.eclipse.e4.core.di.annotations.Optional;
-import org.eclipse.swt.widgets.Composite;
-import org.eclipse.swt.widgets.Text;
 import org.eclipse.swt.SWT;
-import org.eclipse.swt.widgets.Button;
-import org.eclipse.swt.events.SelectionAdapter;
 import org.eclipse.swt.events.SelectionEvent;
 import org.eclipse.swt.events.SelectionListener;
-import static org.mockito.Mockito.*;
+import org.eclipse.swt.widgets.Button;
+import org.eclipse.swt.widgets.Composite;
+import org.eclipse.swt.widgets.Text;
 
 public class QuestionPart extends Composite implements SelectionListener {
-	private static final boolean mocking = true;
+	private static final boolean mocking = false;
 	private Text questionText;
 	private Text answerText;
 	private final IKnowItAll knowItAll;
