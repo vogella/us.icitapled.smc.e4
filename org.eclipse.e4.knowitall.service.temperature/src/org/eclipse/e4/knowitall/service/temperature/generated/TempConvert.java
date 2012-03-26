@@ -17,7 +17,7 @@ import javax.xml.ws.WebServiceFeature;
  * Generated source version: 2.1
  * 
  */
-@WebServiceClient(name = "TempConvert", targetNamespace = "http://tempuri.org/", wsdlLocation = "file:/C:/Users/scela/AppData/Local/Temp/tempdir969946464456199255.tmp/tempconvert_1.wsdl")
+@WebServiceClient(name = "TempConvert", targetNamespace = "http://tempuri.org/", wsdlLocation = "http://www.w3schools.com/webservices/tempconvert.asmx?WSDL")
 public class TempConvert
     extends Service
 {
@@ -30,9 +30,9 @@ public class TempConvert
         try {
             URL baseUrl;
             baseUrl = org.eclipse.e4.knowitall.service.temperature.generated.TempConvert.class.getResource(".");
-            url = new URL(baseUrl, "file:/C:/Users/scela/AppData/Local/Temp/tempdir969946464456199255.tmp/tempconvert_1.wsdl");
+            url = new URL(baseUrl, "http://www.w3schools.com/webservices/tempconvert.asmx?WSDL");
         } catch (MalformedURLException e) {
-            logger.warning("Failed to create URL for the wsdl Location: 'file:/C:/Users/scela/AppData/Local/Temp/tempdir969946464456199255.tmp/tempconvert_1.wsdl', retrying as a local file");
+            logger.warning("http://www.w3schools.com/webservices/tempconvert.asmx?WSDL");
             logger.warning(e.getMessage());
         }
         TEMPCONVERT_WSDL_LOCATION = url;
