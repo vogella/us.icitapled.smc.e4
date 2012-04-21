@@ -1,0 +1,4 @@
+A program showing the power of eclipse e4 context functions and object suppliers.
+Called the KnowItAll the program takes a string and based on the contents of the string it goes and fetches the appropriate
+service ranging from web service calls to bing translations. Also there are some special injections when someone needs
+to use an extended object supplier.
